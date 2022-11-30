@@ -16,8 +16,8 @@ import javax.persistence.Id;
 @Entity
 public class Aluno {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //meu valor vai ser gerado a partir da estrategia do generation type.identity pq vai trazer o incremento de um e um p meu id
-    private Long id; //primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String nome;
 

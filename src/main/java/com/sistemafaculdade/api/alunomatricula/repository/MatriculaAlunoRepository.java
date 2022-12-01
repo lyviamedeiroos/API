@@ -1,6 +1,6 @@
-package com.sistemafaculdade.api.matricula_aluno.repositories;
+package com.sistemafaculdade.api.alunomatricula.repository;
 
-import com.sistemafaculdade.api.matricula_aluno.models.MatriculaAluno;
+import com.sistemafaculdade.api.alunomatricula.model.MatriculaAluno;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

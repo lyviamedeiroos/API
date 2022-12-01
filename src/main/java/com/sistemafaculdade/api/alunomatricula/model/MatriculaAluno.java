@@ -1,7 +1,7 @@
-package com.sistemafaculdade.api.matricula_aluno.models;
+package com.sistemafaculdade.api.alunomatricula.model;
 
-import com.sistemafaculdade.api.secretaria.models.Aluno;
-import com.sistemafaculdade.api.secretaria.models.Disciplina;
+import com.sistemafaculdade.api.secretaria.model.Aluno;
+import com.sistemafaculdade.api.secretaria.model.Disciplina;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

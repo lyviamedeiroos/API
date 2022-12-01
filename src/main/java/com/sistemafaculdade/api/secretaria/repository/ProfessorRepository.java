@@ -1,6 +1,6 @@
-package com.sistemafaculdade.api.secretaria.repositories;
+package com.sistemafaculdade.api.secretaria.repository;
 
-import com.sistemafaculdade.api.secretaria.models.Professor;
+import com.sistemafaculdade.api.secretaria.model.Professor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

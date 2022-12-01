@@ -1,7 +1,7 @@
-package com.sistemafaculdade.api.matricula_aluno.services;
+package com.sistemafaculdade.api.alunomatricula.service;
 
-import com.sistemafaculdade.api.matricula_aluno.models.MatriculaAluno;
-import com.sistemafaculdade.api.matricula_aluno.repositories.MatriculaAlunoRepository;
+import com.sistemafaculdade.api.alunomatricula.model.MatriculaAluno;
+import com.sistemafaculdade.api.alunomatricula.repository.MatriculaAlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

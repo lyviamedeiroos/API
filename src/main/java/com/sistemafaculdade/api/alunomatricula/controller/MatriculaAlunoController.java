@@ -1,7 +1,7 @@
-package com.sistemafaculdade.api.matricula_aluno.controllers;
+package com.sistemafaculdade.api.alunomatricula.controller;
 
-import com.sistemafaculdade.api.matricula_aluno.models.MatriculaAluno;
-import com.sistemafaculdade.api.matricula_aluno.services.MatriculaAlunoService;
+import com.sistemafaculdade.api.alunomatricula.model.MatriculaAluno;
+import com.sistemafaculdade.api.alunomatricula.service.MatriculaAlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

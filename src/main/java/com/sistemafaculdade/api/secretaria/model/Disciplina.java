@@ -1,4 +1,4 @@
-package com.sistemafaculdade.api.secretaria.models;
+package com.sistemafaculdade.api.secretaria.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

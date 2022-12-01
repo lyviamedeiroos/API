@@ -1,7 +1,7 @@
-package com.sistemafaculdade.api.secretaria.services;
+package com.sistemafaculdade.api.secretaria.service;
 
-import com.sistemafaculdade.api.secretaria.models.Aluno;
-import com.sistemafaculdade.api.secretaria.repositories.AlunoRepository;
+import com.sistemafaculdade.api.secretaria.model.Aluno;
+import com.sistemafaculdade.api.secretaria.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +12,13 @@ import java.util.Optional;
 public class AlunoService {
 
 
+    AlunoRepository repository;
 
     @Autowired
-    AlunoRepository repository;
+    public AlunoService(AlunoRepository r){
+        this.repository = r;
+    }
+
     public Aluno create(Aluno aluno){
         return repository.save(aluno);
 
@@ -25,8 +29,14 @@ public class AlunoService {
         return repository.findAll(); //n passei nada como parametro pq quero que passe tudo
     }
 
-    public Optional<Aluno> findById(Long id){ //criei um metodo optional que permite retornar nulo pra evitar nullpointerexception
-        return repository.findById(id); //passei como parametro o id para buscar por lá
+    public Aluno findById(Long id){  //criei um metodo optional que permite retornar nulo pra evitar nullpointerexception
+
+        Optional<Aluno> aluno = repository.findById(id);
+        if (aluno.isPresent()){
+            return aluno.get();
+        }
+        return null;
+
     }
 
     public void delete(Long id ) { //metodo para deletar id

@@ -1,7 +1,7 @@
-package com.sistemafaculdade.api.secretaria.controllers;
+package com.sistemafaculdade.api.secretaria.controller;
 
-import com.sistemafaculdade.api.secretaria.models.Professor;
-import com.sistemafaculdade.api.secretaria.services.ProfessorService;
+import com.sistemafaculdade.api.secretaria.model.Professor;
+import com.sistemafaculdade.api.secretaria.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -28,7 +28,7 @@ public class AlunoController {
     }
     @GetMapping("/all") //pra mapear tudo
     @ResponseStatus(HttpStatus.OK) //
-    public List<Aluno> findAll(){ 
+    public List<Aluno> findAll(){ //metodo para trazer todos os alunos atraves de uma lista
         return service.findAll();
     }
 

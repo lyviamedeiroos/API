@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController //o controller tem que ter uma caracteristica de comunicação via rest, http.
-@RequestMapping("/alunos")  // mapear a url que vai comunicar com essa entidade via http, coloquei como parametro /alunos pq tenho que mapear tudo que fiz de alunos
+@RequestMapping("/alunos")  // mapear a url que vai comunicar com essa entidade via http, coloquei como parametro /alunos
 public class AlunoController {
 
     @Autowired //pra injetar o service no meu controller
@@ -42,6 +42,12 @@ public class AlunoController {
     @ResponseStatus(HttpStatus.NO_CONTENT) //status de sem conteudo
     public void delete(@PathVariable Long id){ //metodo para deletar atraves do id
         service.delete(id);
+    }
+
+    @DeleteMapping("/all")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteAll(){ //implementei um metodo pra deletar tudo do banco (???????)
+       service.deleteAll();
     }
 
 

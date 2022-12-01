@@ -18,10 +18,10 @@ public class AlunoService {
     public Aluno create(Aluno aluno){
         return repository.save(aluno);
 
-
     }
 
     public List<Aluno> findAll(){ //criei um metodo que vai retornar uma lista de alunos
+
         return repository.findAll(); //n passei nada como parametro pq quero que passe tudo
     }
 
@@ -30,6 +30,10 @@ public class AlunoService {
     }
 
     public void delete(Long id ) { //metodo para deletar id
-        repository.deleteById(id); //para deletar atraves do id
+        repository.deleteById(id);
+    }
+
+    public void deleteAll(){ // metodo para deletar tudo
+        repository.deleteAll();
     }
 }

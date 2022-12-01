@@ -54,7 +54,7 @@ public class AlunoController {
     }
 
     @DeleteMapping("/all")
-  //  @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteAll(){ //implementei um metodo pra deletar tudo do banco (???????)
        service.deleteAll();
     }
